@@ -1,0 +1,136 @@
+body {
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2 {
+    font-family: "Tangerine", cursive;
+    font-size: 48px;
+    text-align: center;
+    background-color: black;
+    color: #B39B5B;
+}
+
+p {
+    font-family: "Tangerine", cursive;
+    font-size: 36px;
+    background-color: black;
+}
+
+img {
+    border: 2px solid #B39B5B;
+}
+
+.jumbotron {
+    background-color: black;
+    color: #B39B5B;
+    font-family: "Tangerine", cursive;
+    height: 100px;
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    border: #B39B5B 2px solid;
+}
+
+#aragorn {
+    margin-left: 160px;
+}
+
+#aragornhp{
+    margin-left: 160px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#aragornatt{
+    margin-left: 160px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#aragorncatt{
+    margin-left: 160px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#eowyn {
+    margin-left: 150px;
+}
+
+#eowynhp{
+    margin-left: 150px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#eowynatt{
+    margin-left: 150px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#eowyncatt{
+    margin-left: 150px;
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#gimlihp{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#gimliatt{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#gimlicatt{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#galadrielhp{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#galadrielatt{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
+
+#galadrielcatt{
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    font-size: 36px;
+    text-align: center;
+}
