@@ -5,7 +5,7 @@ $(document).ready(function(){
 var attackBonus = [];
 var enemy = [];
 var character = [];
-var dead = [];
+var death = [];
 
 // Define objects for character variables.
 
