@@ -1,3 +1,12 @@
+$(document).ready(function(){
+
+// Define global variables for attack increase, enemy HP loss, character HP loss, and enemy/character death.
+
+var attackBonus = [];
+var enemy = [];
+var character = [];
+var dead = [];
+
 // Define objects for character variables.
 
 var aragorn = {
@@ -24,12 +33,13 @@ var galadriel = {
     counter = 150,
 }
 
-// Define an on.click function to select the character ID.
+// Define an on.click function to select the character ID and move to arena.
 
 
-// Define an on.click function to select the enemy ID.
 
-// Define an on.click function to start the attack function.
+// Define an on.click function to select the enemy ID and move to arena.
+
+// Define an on.click function to select the "Attack" button and start the attack function.
 
 /* Attack function:
 
@@ -54,3 +64,5 @@ var galadriel = {
 */
 
 // 
+
+});

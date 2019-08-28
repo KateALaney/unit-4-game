@@ -6,6 +6,14 @@ body {
     background-position: center;
 }
 
+h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 72px;
+    text-align: center;
+    background-color: black;
+    color: #B39B5B;
+}
+
 h2 {
     font-family: "Tangerine", cursive;
     font-size: 48px;
@@ -35,6 +43,39 @@ img {
 .card {
     background-color: black;
     border: #B39B5B 2px solid;
+}
+
+.col-sm-6 {
+    border: #B39B5B solid 2px;
+    height: 600px;
+}
+
+.display-4 {
+    font-family: "Tangerine", cursive;
+    font-size: 72px;
+    text-align: center;
+    background-color: black;
+    color: #B39B5B;
+}
+
+#container3 {
+    background-color: black;
+    height: 800px;
+    border: #B39B5B 2px solid;
+}
+
+#attackbtn {
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    border: #B39B5B solid 1px;
+    font-size: 36px;
+}
+
+#resetbtn {
+    font-family: "Tangerine", cursive;
+    color: #B39B5B;
+    border: #B39B5B solid 1px;
+    font-size: 36px;
 }
 
 #aragorn {
