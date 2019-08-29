@@ -36,7 +36,7 @@ img {
     background-color: black;
     color: #B39B5B;
     font-family: "Tangerine", cursive;
-    height: 100px;
+    height: auto;
     text-align: center;
 }
 
@@ -48,6 +48,14 @@ img {
 .col-sm-6 {
     border: #B39B5B solid 2px;
     height: 600px;
+}
+
+.col-sm-4 {
+    border: #B39B5B solid 2px;
+    font-family: "Tangerine", cursive;
+    font-size: 36px;
+    color: #B39B5B;
+    text-align: center;
 }
 
 .display-4 {
@@ -80,98 +88,9 @@ img {
 
 #aragorn {
     margin-left: 160px;
-}
-
-#aragornhp{
-    margin-left: 160px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#aragornatt{
-    margin-left: 160px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#aragorncatt{
-    margin-left: 160px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
+    position: relative;
 }
 
 #eowyn {
     margin-left: 150px;
-}
-
-#eowynhp{
-    margin-left: 150px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#eowynatt{
-    margin-left: 150px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#eowyncatt{
-    margin-left: 150px;
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#gimlihp{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#gimliatt{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#gimlicatt{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#galadrielhp{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#galadrielatt{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
-}
-
-#galadrielcatt{
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    font-size: 36px;
-    text-align: center;
 }
