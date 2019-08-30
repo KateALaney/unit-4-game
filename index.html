@@ -8,14 +8,16 @@
     <title>LOTR RPG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <div class="jumbotron">
         <div class="container1">
@@ -25,38 +27,79 @@
     <div class="container2">
         <div class="row">
             <div class="col-md-3">
-                <div class="card" style="width: 18rem;" id="aragorn">
+                <div class="card" style="width: 14rem;" id="aragorn">
                     <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
                     <div class="card-body">
                         <h2>Aragorn</h2>
                     </div>
                 </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="aAttack">
+                    <div class="card-body">
+                        <p>Select to Attack</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="aDefend">
+                    <div class="card-body">
+                        <p>Select to Defend</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 18rem;" id="eowyn">
+                <div class="card" style="width: 14rem;" id="eowyn">
                     <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
                     <div class="card-body">
                         <h2>Eowyn</h2>
                     </div>
                 </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="eAttack">
+                    <div class="card-body">
+                        <p>Select to Attack</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="eDefend">
+                    <div class="card-body">
+                        <p>Select to Defend</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 18rem;" id="gimli">
+                <div class="card" style="width: 14rem;" id="gimli">
                     <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
                     <div class="card-body">
                         <h2>Gimli</h2>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;" id="galadriel">
-                    <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
+                <div class="card" style="width: 14rem; height: 4rem;" id="gAttack">
                     <div class="card-body">
-                        <h2>Galadriel</h2>
+                        <p>Select to Attack</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="gDefend">
+                    <div class="card-body">
+                        <p>Select to Defend</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 14rem;" id="galadriel">
+                <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
+                <div class="card-body">
+                    <h2>Galadriel</h2>
+                </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="gaAttack">
+                    <div class="card-body">
+                        <p>Select to Attack</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem; height: 4rem;" id="gaDefend">
+                    <div class="card-body">
+                        <p>Select to Defend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div class="container-fluid" id="container3">
         <h1>ARENA</h1>
@@ -90,8 +133,41 @@
                         Counter-Attack:
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="aragornAttack">
+                            <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
+                            <div class="card-body">
+                                <h2>Aragorn</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="eowynAttack">
+                            <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
+                            <div class="card-body">
+                                <h2>Eowyn</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="gimliAttack">
+                            <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
+                            <div class="card-body">
+                                <h2>Gimli</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="galadrielAttack">
+                            <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
+                            <div class="card-body">
+                                <h2>Galadriel</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <div class="col-sm-6">
                 <h2>Defender</h2>
                 <div class="row">
@@ -104,10 +180,42 @@
                     <div class="col-sm-4" id="encattack">
                         Counter-Attack:
                     </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="aragornDefend">
+                            <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
+                            <div class="card-body">
+                                <h2>Aragorn</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="eowynDefend">
+                            <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
+                            <div class="card-body">
+                                <h2>Eowyn</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="gimliDefend">
+                            <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
+                            <div class="card-body">
+                                <h2>Gimli</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 10rem;" id="galadrielDefend">
+                            <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
+                            <div class="card-body">
+                                <h2>Galadriel</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="galadriel"><img src="assets/images/galadriel.jpg"></div>
 </body>
+
 </html>

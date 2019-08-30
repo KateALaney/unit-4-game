@@ -24,8 +24,10 @@ h2 {
 
 p {
     font-family: "Tangerine", cursive;
-    font-size: 36px;
+    font-size: 24px;
     background-color: black;
+    text-align: center;
+    color: #B39B5B;
 }
 
 img {
@@ -43,6 +45,22 @@ img {
 .card {
     background-color: black;
     border: #B39B5B 2px solid;
+}
+
+#aAttack {
+    margin-left: 150px;
+}
+
+#aDefend {
+    margin-left: 150px;
+}
+
+#eAttack {
+    margin-left: 130px;
+}
+
+#eDefend {
+    margin-left: 130px;
 }
 
 .col-sm-6 {
@@ -87,10 +105,26 @@ img {
 }
 
 #aragorn {
-    margin-left: 160px;
+    margin-left: 150px;
     position: relative;
 }
 
 #eowyn {
-    margin-left: 150px;
+    margin-left: 130px;
+}
+
+#gimli {
+    margin-right: 140px;
+}
+
+#galadriel {
+    margin-right: 160px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
