@@ -38,11 +38,13 @@ var galadriel =
       name: "galadriel",
       gahitpoints: 100,
       gaattack: 600,
-      gacounter: 150,
+      gacounter: 250,
     }
 ;
 
 // Define an on.click function to select the attacker ID and the defender ID to move to arena.
+
+// Aragorn Attack Function
 
 $("#aAttack").click(function() {
   $("#aragorn").addClass("hide");
@@ -52,7 +54,10 @@ $("#aAttack").click(function() {
   $("#gimliAttack").addClass("hide");
   $("#galadrielAttack").addClass("hide");
   $("#aragornDefend").addClass("hide");
+  document.getElementById("charcattack").innerHTML = "Counter-Attack: 450";
 });
+
+// Aragorn Defend Function
 
 $("#aDefend").click(function() {
   $("#aragorn").addClass("hide");
@@ -62,7 +67,10 @@ $("#aDefend").click(function() {
   $("#gimliDefend").addClass("hide");
   $("#galadrielDefend").addClass("hide");
   $("#aragornAttack").addClass("hide");
+  document.getElementById("encattack").innerHTML = "Counter-Attack: 450";
 });
+
+// Eowyn Attack Function
 
 $("#eAttack").click(function() {
   $("#eowyn").addClass("hide");
@@ -72,7 +80,10 @@ $("#eAttack").click(function() {
   $("#gimliAttack").addClass("hide");
   $("#galadrielAttack").addClass("hide");
   $("#eowynDefend").addClass("hide");
+  document.getElementById("charcattack").innerHTML = "Counter-Attack: 150";
 });
+
+// Eowyn Defend Function
 
 $("#eDefend").click(function() {
   $("#eowyn").addClass("hide");
@@ -82,25 +93,69 @@ $("#eDefend").click(function() {
   $("#gimliDefend").addClass("hide");
   $("#galadrielDefend").addClass("hide");
   $("#eowynAttack").addClass("hide");
+  document.getElementById("encattack").innerHTML = "Counter-Attack: 150";
 });
+
+// Gimli Attack Function
 
 $("#gAttack").click(function() {
   $("#gimli").addClass("hide");
   $("#gAttack").addClass("hide");
   $("#gDefend").addClass("hide");
+  $("#aragornAttack").addClass("hide");
+  $("#eowynAttack").addClass("hide");
+  $("#galadrielAttack").addClass("hide");
+  $("#gimliDefend").addClass("hide");
+  document.getElementById("charcattack").innerHTML = "Counter-Attack: 350";
 });
 
-$('#galadriel').click(function() {
-  $('#galadriel').addClass("hide");
+// Gimli Defend Function
+
+$("#gDefend").click(function() {
+  $("#gimli").addClass("hide");
+  $("#gDefend").addClass("hide");
+  $("#gAttack").addClass("hide");
+  $("#aragornDefend").addClass("hide");
+  $("#eowynDefend").addClass("hide");
+  $("#galadrielDefend").addClass("hide");
+  $("#gimliAttack").addClass("hide");
+  document.getElementById("encattack").innerHTML = "Counter-Attack: 350";
+})
+
+// Galadriel Attack Function
+
+$("#gaAttack").click(function() {
+  $("#galadriel").addClass("hide");
+  $("#gaDefend").addClass("hide");
+  $("#gaAttack").addClass("hide");
+  $("#aragornAttack").addClass("hide");
+  $("#eowynAttack").addClass("hide");
+  $("#gimliAttack").addClass("hide");
+  $("#galadrielDefend").addClass("hide");
+  document.getElementById("charcattack").innerHTML = "Counter-Attack: 250";
+});
+
+// Galadriel Defend Function
+
+$("#gaDefend").click(function() {
+  $("#galadriel").addClass("hide");
+  $("#gaDefend").addClass("hide");
+  $("#gaAttack").addClass("hide");
+  $("#aragornDefend").addClass("hide");
+  $("#eowynDefend").addClass("hide");
+  $("#gimliDefend").addClass("hide");
+  $("#galadrielAttack").addClass("hide");
+  document.getElementById("encattack").innerHTML = "Counter-Attack: 250";
 });
 
 // Define an on.click function to select the "Attack" button and start the attack function.
 
-$('#attackbtn').click(function() {
-  $(this.name)
-
-});
+$("#attackbtn").click(function () {
+  if ("#aAttack") {
     
+  }
+});
+    console.log("This works.")
 
 /*  
 
@@ -132,7 +187,7 @@ If character attack
 */
 
 // Restart button when character dies.
-$('#restart').click(function () {
+$("#resetbtn").click(function () {
   location.reload();
 });
 
