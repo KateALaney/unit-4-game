@@ -1,194 +1,98 @@
 $(document).ready(function(){
 
-// Define global variables for attack increase, enemy HP loss, character HP loss, and enemy/character death.
+// Create global variables for wins, losses, and score.
 
-var attackBonus = [];
-var character = [];
-var enemy = [];
-var death = [];
+var wins = 0;
+var losses = 0;
+var score = 0;
 
-// Define objects for character variables.
+// Generate a random number between 19 and 120.
 
-var aragorn =
-      {
-      name: "aragorn",
-      ahitpoints: 100,
-      aattack: 450,
-      acounter: 450,
+var scoreToBeat = Math.floor(Math.random() * 101) + 19;
+
+// Testing random number generator.
+console.log(scoreToBeat);
+
+// Generate four random numbers between 1 and 12.
+
+var crystal1 = Math.floor(Math.random() * 12) + 1;
+var crystal2 = Math.floor(Math.random() * 12) + 1;
+var crystal3 = Math.floor(Math.random() * 12) + 1;
+var crystal4 = Math.floor(Math.random() * 12) + 1;
+
+// Testing random number generator.
+console.log(crystal1)
+
+// Create an onclick function to set the random number.
+$("#randomNumber").on("click", function () {
+    $("#randomNumber").text("Click for Random Number: " + scoreToBeat);
+});
+
+// Create an onclick function for when a player selects a crystal to add to score and update the score.
+
+$("#roseGold").on("click", function() {
+    score = score + crystal1;
+    $("#yourScore").text("Your Score: " + score);
+    if (score === scoreToBeat) {
+        win();
+    } else if (score > scoreToBeat);
+        loss();
+    }  
+);
+
+$("#purple").on("click", function() {
+    score = score + crystal2;
+    $("#yourScore").text("Your Score: " + score);
+    if (score === scoreToBeat) {
+        win();
+    } else if (score > scoreToBeat);
+        loss();
     }
+);
 
-var eowyn =    
-    {
-      name: "eowyn",
-      ehitpoints: 100,
-      eattack: 200,
-      ecounter: 150,
+$("#clear").on("click", function() {
+    score = score + crystal3;
+    $("#yourScore").text("Your Score: " + score);
+    if (score === scoreToBeat) {
+        win();
+    } else if (score > scoreToBeat);
+        loss();
     }
+);
 
-var gimli =
-    {
-      name: "gimli",
-      ghitpoints: 100,
-      gattack: 300,
-      gcounter: 350,
+$("#rainbow").on("click", function() {
+    score = score + crystal4;
+    $("#yourScore").text("Your Score: " + score);
+    if (score === scoreToBeat) {
+        win();
+    } else if (score > scoreToBeat);
+        loss();
     }
+);
 
-var galadriel =    
-    {
-      name: "galadriel",
-      gahitpoints: 100,
-      gaattack: 600,
-      gacounter: 250,
-    }
-;
+// Create a function to reset the game.  This will reset the randomly-generated numbers.
 
-// Define an on.click function to select the attacker ID and the defender ID to move to arena.
+function reset () {
+    score = 0;
+    $("#yourScore").text("Your Score: " + score);
+    scoreToBeat = Math.floor(Math.random() * 101) + 19;
+    $("#randomNumber").text("Click for Random Number: " + scoreToBeat);
+}
 
-// Aragorn Attack Function
+// Update the win counter.
 
-$("#aAttack").click(function() {
-  $("#aragorn").addClass("hide");
-  $("#aAttack").addClass("hide");
-  $("#aDefend").addClass("hide");
-  $("#eowynAttack").addClass("hide");
-  $("#gimliAttack").addClass("hide");
-  $("#galadrielAttack").addClass("hide");
-  $("#aragornDefend").addClass("hide");
-  document.getElementById("charcattack").innerHTML = "Counter-Attack: 450";
-});
+function win() {
+    wins++;
+    $("#wins").text("Wins: " + wins);
+    reset();
+}
 
-// Aragorn Defend Function
+// Update the loss counter.
 
-$("#aDefend").click(function() {
-  $("#aragorn").addClass("hide");
-  $("#aAttack").addClass("hide");
-  $("#aDefend").addClass("hide");
-  $("#eowynDefend").addClass("hide");
-  $("#gimliDefend").addClass("hide");
-  $("#galadrielDefend").addClass("hide");
-  $("#aragornAttack").addClass("hide");
-  document.getElementById("encattack").innerHTML = "Counter-Attack: 450";
-});
-
-// Eowyn Attack Function
-
-$("#eAttack").click(function() {
-  $("#eowyn").addClass("hide");
-  $("#eAttack").addClass("hide");
-  $("#eDefend").addClass("hide");
-  $("#aragornAttack").addClass("hide");
-  $("#gimliAttack").addClass("hide");
-  $("#galadrielAttack").addClass("hide");
-  $("#eowynDefend").addClass("hide");
-  document.getElementById("charcattack").innerHTML = "Counter-Attack: 150";
-});
-
-// Eowyn Defend Function
-
-$("#eDefend").click(function() {
-  $("#eowyn").addClass("hide");
-  $("#eAttack").addClass("hide");
-  $("#eDefend").addClass("hide");
-  $("#aragornDefend").addClass("hide");
-  $("#gimliDefend").addClass("hide");
-  $("#galadrielDefend").addClass("hide");
-  $("#eowynAttack").addClass("hide");
-  document.getElementById("encattack").innerHTML = "Counter-Attack: 150";
-});
-
-// Gimli Attack Function
-
-$("#gAttack").click(function() {
-  $("#gimli").addClass("hide");
-  $("#gAttack").addClass("hide");
-  $("#gDefend").addClass("hide");
-  $("#aragornAttack").addClass("hide");
-  $("#eowynAttack").addClass("hide");
-  $("#galadrielAttack").addClass("hide");
-  $("#gimliDefend").addClass("hide");
-  document.getElementById("charcattack").innerHTML = "Counter-Attack: 350";
-});
-
-// Gimli Defend Function
-
-$("#gDefend").click(function() {
-  $("#gimli").addClass("hide");
-  $("#gDefend").addClass("hide");
-  $("#gAttack").addClass("hide");
-  $("#aragornDefend").addClass("hide");
-  $("#eowynDefend").addClass("hide");
-  $("#galadrielDefend").addClass("hide");
-  $("#gimliAttack").addClass("hide");
-  document.getElementById("encattack").innerHTML = "Counter-Attack: 350";
-})
-
-// Galadriel Attack Function
-
-$("#gaAttack").click(function() {
-  $("#galadriel").addClass("hide");
-  $("#gaDefend").addClass("hide");
-  $("#gaAttack").addClass("hide");
-  $("#aragornAttack").addClass("hide");
-  $("#eowynAttack").addClass("hide");
-  $("#gimliAttack").addClass("hide");
-  $("#galadrielDefend").addClass("hide");
-  document.getElementById("charcattack").innerHTML = "Counter-Attack: 250";
-});
-
-// Galadriel Defend Function
-
-$("#gaDefend").click(function() {
-  $("#galadriel").addClass("hide");
-  $("#gaDefend").addClass("hide");
-  $("#gaAttack").addClass("hide");
-  $("#aragornDefend").addClass("hide");
-  $("#eowynDefend").addClass("hide");
-  $("#gimliDefend").addClass("hide");
-  $("#galadrielAttack").addClass("hide");
-  document.getElementById("encattack").innerHTML = "Counter-Attack: 250";
-});
-
-// Define an on.click function to select the "Attack" button and start the attack function.
-
-$("#attackbtn").click(function () {
-  if ("#aAttack") {
-    
-  }
-});
-    console.log("This works.")
-
-/*  
-
-if characters.name 
-
-Character attacks, and then counter attack
-Checking to see if HP <= 0
-
-
-
-If character attack
-    return enemy HP loss
-    if enemy HP < 0
-    return enemy dies
-    character ID disappears
-
-    If character attack
-    return character attack increases (new attack = attack + new attack)
-    
-    If enemy attack
-    return character counter attack
-
-    If enemy attack
-    return character HP loss
-    if character HP < 0
-    return character dies
-    game resets on character death
-
-*/
-
-// Restart button when character dies.
-$("#resetbtn").click(function () {
-  location.reload();
-});
+function loss() {
+    loss++;
+    $("#losses").text("Losses: " + losses);
+    reset();
+}
 
 });

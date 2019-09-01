@@ -5,213 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LOTR RPG</title>
+    <title>Crystals Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-
-<body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <div class="jumbotron">
-        <div class="container1">
-            <h1 class="display-4">Lord of the Rings RPG</h1>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Collector of Crystals</h1>
         </div>
     </div>
-    <div class="container2">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="card" style="width: 14rem;" id="aragorn">
-                    <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
-                    <div class="card-body">
-                        <h2>Aragorn</h2>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="aAttack">
-                    <div class="card-body">
-                        <p>Select to Attack</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="aDefend">
-                    <div class="card-body">
-                        <p>Select to Defend</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 14rem;" id="eowyn">
-                    <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
-                    <div class="card-body">
-                        <h2>Eowyn</h2>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="eAttack">
-                    <div class="card-body">
-                        <p>Select to Attack</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="eDefend">
-                    <div class="card-body">
-                        <p>Select to Defend</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 14rem;" id="gimli">
-                    <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
-                    <div class="card-body">
-                        <h2>Gimli</h2>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="gAttack">
-                    <div class="card-body">
-                        <p>Select to Attack</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 14rem; height: 4rem;" id="gDefend">
-                    <div class="card-body">
-                        <p>Select to Defend</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="width: 14rem;" id="galadriel">
-                    <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
-                    <div class="card-body">
-                        <h2>Galadriel</h2>
-                    </div>
-                    <div class="card" style="width: 14rem; height: 4rem;" id="gaAttack">
-                        <div class="card-body">
-                            <p>Select to Attack</p>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 14rem; height: 4rem;" id="gaDefend">
-                        <div class="card-body">
-                            <p>Select to Defend</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="container-fluid" id="container3">
-        <h1>ARENA</h1>
-        <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-outline-dark" id="attackbtn">Attack</button>
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-                <button type="button" class="btn btn-outline-dark" id="resetbtn">Reset</button>
+            <div class="col-md-12">
+                <h2>Directions</h2>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total
+                    score goes above the random number.</p>
+                <p>The value of each crystal will be hidden from you until you click on it.</p>
+                <p>Each time the game starts, the value of each crystal will change.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <h2>Attacker</h2>
-                <div class="row">
-                    <div class="col-sm-4" id="charhitpoints">
-                        Hit Points: 100
-                    </div>
-                    <div class="col-sm-4" id="charattack">
-                        Attack:
-                    </div>
-                    <div class="col-sm-4" id="charcattack">
-                        Counter-Attack:
-                    </div>
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card" style="width: 20rem;">
+                    <span id="wins">Wins:</span>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="aragornAttack">
-                            <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
-                            <div class="card-body">
-                                <h2>Aragorn</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="eowynAttack">
-                            <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
-                            <div class="card-body">
-                                <h2>Eowyn</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="gimliAttack">
-                            <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
-                            <div class="card-body">
-                                <h2>Gimli</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="galadrielAttack">
-                            <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
-                            <div class="card-body">
-                                <h2>Galadriel</h2>
-                            </div>
-                        </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="width: 20rem;">
+                    <span id="losses">Losses:</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="r12">
+                <div class="card" style="width: 20rem;" id="randomNumber">
+                    <span id="random">Click for Random Number:</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="r12">
+                    <div class="card" style="width: 20rem;" id="randomNumber">
+                        <span id="yourScore">Your Score:</span>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <h2>Defender</h2>
-                <div class="row">
-                    <div class="col-sm-4" id="enhitpoints">
-                        Hit Points: 100
-                    </div>
-                    <div class="col-sm-4" id="enattack">
-                        Attack:
-                    </div>
-                    <div class="col-sm-4" id="encattack">
-                        Counter-Attack:
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="aragornDefend">
-                            <img src="assets/images/aragorn.jpg" class="card-img-top" alt="Aragorn">
-                            <div class="card-body">
-                                <h2>Aragorn</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="eowynDefend">
-                            <img src="assets/images/eowyn.jpg" class="card-img-top" alt="Eowyn">
-                            <div class="card-body">
-                                <h2>Eowyn</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="gimliDefend">
-                            <img src="assets/images/gimli.jpg" class="card-img-top" alt="Gimli">
-                            <div class="card-body">
-                                <h2>Gimli</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" style="width: 10rem;" id="galadrielDefend">
-                            <img src="assets/images/galadriel.jpg" class="card-img-top" alt="Galadriel">
-                            <div class="card-body">
-                                <h2>Galadriel</h2>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            &nbsp;
+        </div>
+        <div class="row top-buffer">
+            <div class="col-sm-3">
+                <div class="card" style="width: 10rem;" id="roseGold">
+                    <img src="assets/images/roseGoldCrystal.jpg" class="card-img-top" alt="Rose Gold Crystal">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 14rem;" id="purple">
+                    <img src="assets/images/purpleCrystal.jpg" class="card-img-top" alt="Purple Crystal">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 14rem;" id="clear">
+                    <img src="assets/images/clearCrystal.jpg" class="card-img-top" alt="Clear Crystal">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 14rem;" id="rainbow">
+                    <img src="assets/images/rainbowCrystal.jpg" class="card-img-top" alt="Rainbow Crystal">
                 </div>
             </div>
         </div>

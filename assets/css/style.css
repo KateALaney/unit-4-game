@@ -1,130 +1,56 @@
 body {
-    background-image: url(../images/map.jpg);
-    background-repeat: no-repeat;
     background-color: black;
-    background-attachment: fixed;
-    background-position: center;
 }
 
-h1 {
-    font-family: "Tangerine", cursive;
-    font-size: 72px;
-    text-align: center;
+.background {
     background-color: black;
-    color: #B39B5B;
-}
-
-h2 {
-    font-family: "Tangerine", cursive;
-    font-size: 48px;
-    text-align: center;
-    background-color: black;
-    color: #B39B5B;
-}
-
-p {
-    font-family: "Tangerine", cursive;
-    font-size: 24px;
-    background-color: black;
-    text-align: center;
-    color: #B39B5B;
-}
-
-img {
-    border: 2px solid #B39B5B;
+    border: 2px solid black;
 }
 
 .jumbotron {
     background-color: black;
-    color: #B39B5B;
-    font-family: "Tangerine", cursive;
-    height: auto;
     text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #B00528;
+    height: 100px;
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    color: #F0A03B;
+}
+
+p {
+    font-family: "Cinzel", serif;
+    color: white;
+}
+
+#r12 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: #7811CE;
+}
+
+.col-md-12 {
+    text-align: left;
+    font-family: "Cinzel", serif;
+}
+
+.col-md-6 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: #F98DF6;
+}
+
+.col-md-3 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: white;
 }
 
 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
     background-color: black;
-    border: #B39B5B 2px solid;
-}
-
-#aAttack {
-    margin-left: 150px;
-}
-
-#aDefend {
-    margin-left: 150px;
-}
-
-#eAttack {
-    margin-left: 130px;
-}
-
-#eDefend {
-    margin-left: 130px;
-}
-
-.col-sm-6 {
-    border: #B39B5B solid 2px;
-    height: 600px;
-}
-
-.col-sm-4 {
-    border: #B39B5B solid 2px;
-    font-family: "Tangerine", cursive;
-    font-size: 36px;
-    color: #B39B5B;
-    text-align: center;
-}
-
-.display-4 {
-    font-family: "Tangerine", cursive;
-    font-size: 72px;
-    text-align: center;
-    background-color: black;
-    color: #B39B5B;
-}
-
-#container3 {
-    background-color: black;
-    height: 800px;
-    border: #B39B5B 2px solid;
-}
-
-#attackbtn {
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    border: #B39B5B solid 1px;
-    font-size: 36px;
-}
-
-#resetbtn {
-    font-family: "Tangerine", cursive;
-    color: #B39B5B;
-    border: #B39B5B solid 1px;
-    font-size: 36px;
-}
-
-#aragorn {
-    margin-left: 150px;
-    position: relative;
-}
-
-#eowyn {
-    margin-left: 130px;
-}
-
-#gimli {
-    margin-right: 140px;
-}
-
-#galadriel {
-    margin-right: 160px;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
 }
