@@ -18,17 +18,27 @@ body {
 h2 {
     font-family: "Cinzel", serif;
     color: #F0A03B;
+    font-size: 36px;
 }
 
 p {
-    font-family: "Cinzel", serif;
+    font-family: "Aladin", serif;
     color: white;
+    font-size: 24px;
 }
 
 #r12 {
     text-align: center;
     font-family: "Cinzel", serif;
     color: #7811CE;
+    font-size: 24px;
+}
+
+#r13 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: #FEFD87;
+    font-size: 24px;
 }
 
 .col-md-12 {
@@ -40,6 +50,7 @@ p {
     text-align: center;
     font-family: "Cinzel", serif;
     color: #F98DF6;
+    font-size: 24px;
 }
 
 .col-md-3 {
