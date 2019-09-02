@@ -23,6 +23,9 @@ var crystal4 = Math.floor(Math.random() * 12) + 1;
 
 // Testing random number generator.
 console.log(crystal1)
+console.log(crystal2)
+console.log(crystal3)
+console.log(crystal4)
 
 // Create an onclick function for when a player selects a crystal to add to score and update the score.
 
@@ -31,11 +34,10 @@ $("#roseGold").click(function() {
     $("#yourScore").text("Your Score: " + score);
     if (score === scoreToBeat) {
         win();
-    } else if (score > scoreToBeat); {
+    } else if (score > scoreToBeat) {
         loss();
     }
-    }
-);
+});
 
 
 $("#purple").click(function() {
@@ -43,11 +45,10 @@ $("#purple").click(function() {
     $("#yourScore").text("Your Score: " + score);
     if (score === scoreToBeat) {
         win();
-    } else if (score > scoreToBeat); {
+    } else if (score > scoreToBeat) {
         loss();
     }
-    }
-);
+});
 
 
 $("#clear").click(function() {
@@ -55,22 +56,21 @@ $("#clear").click(function() {
     $("#yourScore").text("Your Score: " + score);
     if (score === scoreToBeat) {
         win();
-    } else if (score > scoreToBeat); {
+    } else if (score > scoreToBeat) {
         loss();
     }
-    }
-);
+});
 
 $("#rainbow").click(function() {
     score = score + crystal4;
     $("#yourScore").text("Your Score: " + score);
     if (score === scoreToBeat) {
         win();
-    } else if (score > scoreToBeat); {
+    } else if (score > scoreToBeat) {
+        console.log("here");
         loss();
     }
-    }
-);
+});
 
 // Create a function to reset the game.  This will reset the randomly-generated numbers.
 
