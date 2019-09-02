@@ -67,7 +67,6 @@ $("#rainbow").click(function() {
     if (score === scoreToBeat) {
         win();
     } else if (score > scoreToBeat) {
-        console.log("here");
         loss();
     }
 });
@@ -79,6 +78,10 @@ function reset () {
     $("#yourScore").text("Your Score: " + score);
     scoreToBeat = Math.floor(Math.random() * 101) + 19;
     $("#randomNumber").text("Random Number: " + scoreToBeat);
+    crystal1 = Math.floor(Math.random() * 12) + 1;
+    crystal2 = Math.floor(Math.random() * 12) + 1;
+    crystal3 = Math.floor(Math.random() * 12) + 1;
+    crystal4 = Math.floor(Math.random() * 12) + 1;
 }
 
 // Update the win counter.
